@@ -19,5 +19,5 @@ def conversation():
     if yn == "N":
         print("I said SCRAM")
     if yn == "n":
-        print("I said SCRAM")
+        print("I said SCRAM") #uhoh
     mainmenu.menu()
