@@ -15,7 +15,7 @@ def menu():
     print("   (4) Higher or Lower")
     print("   (5) Sketchy Corner")
     wanna = int(input("Where do you wanna go?"))
-    train(wanna, star.star, rpc.rockpaperscisors, bj.blackjack, hl.higher_lower, corner.conversation, corner.check)
+    train(wanna, star.star, rpc.rockpaperscisors, bj.blackjack, hl.higher_lower, corner.conversation, corner.leave)
 def train(station, func1, func2, func3, func4, func5a, func5b):
     if station == 1:
         func1()
