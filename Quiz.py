@@ -1,6 +1,10 @@
 import random
 import transport_system
 
+###############################################################################################################################
+#This Game is in a temporary(but working) state, the questions will likely be changed later, and mabye coded changed in future#
+###############################################################################################################################
+
 def quiz_operator():
     print("***Quiz***")
     transport_system.wrong_platform_check()
