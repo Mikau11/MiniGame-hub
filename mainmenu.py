@@ -2,6 +2,7 @@ import star
 import rpc
 import bj
 import hl
+import Quiz
 import corner
 
 
@@ -13,10 +14,11 @@ def menu():
     print("   (2) RockPaperScissors")
     print("   (3) BlackJack")
     print("   (4) Higher or Lower")
-    print("   (5) Sketchy Corner")
+    print("   (5) Quiz")
+    print("   (6) Sketchy Corner")
     wanna = int(input("Where do you wanna go?"))
-    train(wanna, star.star, rpc.rockpaperscisors, bj.blackjack, hl.higher_lower, corner.conversation, corner.leave)
-def train(station, func1, func2, func3, func4, func5a, func5b):
+    train(wanna, star.star, rpc.rockpaperscisors, bj.blackjack, hl.higher_lower, Quiz.quiz_operator, corner.conversation, corner.leave)
+def train(station, func1, func2, func3, func4, func5, func6a, func6b):
     if station == 1:
         func1()
     elif station == 2:
@@ -26,11 +28,13 @@ def train(station, func1, func2, func3, func4, func5a, func5b):
     elif station == 4:
         func4()
     elif station == 5:
+        func5()
+    elif station == 6:
         if not check:
             corner_check()
-            func5a()
+            func6a()
         elif check:
-            func5b()
+            func6b()
 def corner_check(): #I HATE that this is needed, because it does ONE thing and NOTHING else, but it DOESN'T WORK OTHERWISE
     global check
     check = True
