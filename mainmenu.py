@@ -27,6 +27,7 @@ def train(station, func1, func2, func3, func4, func5a, func5b):
         func4()
     elif station == 5:
         if not check:
+            corner_check()
             func5a()
         elif check:
             func5b()
