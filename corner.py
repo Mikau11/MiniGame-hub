@@ -1,6 +1,6 @@
 import mainmenu
 
-def check():
+def leave():
     print("I thought I told you to SCRAM")
 def conversation():
     print("Hey kid, wanna know a secret?")
