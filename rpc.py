@@ -1,13 +1,9 @@
 import random
-import mainmenu
 import transport_system
 
 def rockpaperscisors():
     print("***Rock Paper Scissors***")
-    print(" **Play?**")
-    print(" **Y/N**") #same as the one further down
-    p = input() #but done exclusivley for the beginging
-    transport_system.wrong_platform_check(p, mainmenu.menu) #because its done barely differently
+    transport_system.wrong_platform_check()
     print("   (1) Rock")
     print("   (2) Paper")
     print("   (3) Scissors")
@@ -16,11 +12,7 @@ def rockpaperscisors():
     opchoice = random.randint(1,3)
     translate("They", opchoice)
     decider(mychoice, opchoice)
-    print("What do you wanna do?")
-    print("(1) Play again")
-    print("(2) Go back to main menu")
-    ticketmachine = int(input()) #Asks the user where they wanna go
-    transport_system.train(ticketmachine, rockpaperscisors, mainmenu.menu) #See comment in transport_system.py
+    transport_system.train(rockpaperscisors) #See comment in transport_system.py
 
 def translate(youthey, choice):
     print(youthey)

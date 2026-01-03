@@ -1,13 +1,9 @@
 import random
-import mainmenu
 import transport_system
 
 def blackjack():
     print("***Black Jack***")
-    print(" **Play?**")
-    print(" **Y/N**") #same as the one further down
-    p = input() #but done exclusivley for the beginging
-    transport_system.wrong_platform_check(p, mainmenu.menu) #because its done barely differently
+    transport_system.wrong_platform_check()
 
     card1 = random.randint(1, 11) #Base
     card2 = random.randint(1, 10) #Cards
@@ -34,8 +30,4 @@ def blackjack():
     elif cardf < 21:
         print("You win(kinda)!")
 
-    print("What do you wanna do?")
-    print("(1) Play again")
-    print("(2) Go back to main menu")
-    ticketmachine = int(input()) #Asks the user where they wanna go
-    transport_system.train(ticketmachine, blackjack, mainmenu.menu) #See comment in transport_system.py
+    transport_system.train(blackjack) #See comment in transport_system.py
