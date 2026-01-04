@@ -22,25 +22,59 @@ def q1_a():
     ans = int(input("Whats your answer?"))
     if ans != 2:
         print("Wrong!")
-        transport_system.train(quiz_operator)
-
+        applicable_answer(ans)
 def q1_b():
     print("(Q1) Whats the capital of England?")
-    print("(1) Berlin")
-    print("(2) Paris")
+    print("(1) Tokyo")
+    print("(2) Sao Paulo")
     print("(3) London")
     ans = int(input("Whats your answer?"))
     if ans != 3:
         print("Wrong!")
-        transport_system.train(quiz_operator)
+        applicable_answer(ans)
 
+def q1_c():
+    print("(Q1) Whats the capital of Russia?")
+    print("(1) Moscow")
+    print("(2) Canberra")
+    print("(3) Ottawa")
+    ans = int(input("Whats your answer?"))
+    if ans != 1:
+        print("Wrong!")
+        applicable_answer(ans)
 
+def q1_d():
+    print("(Q1) What are the only 2 countries that can legally take parts of antarctica?")
+    print("(1) USA and Russia")
+    print("(2) Germany and Canada")
+    print("(3) France and Japan")
+    ans = int(input("Whats your answer?"))
+    if ans != 1:
+        print("Wrong!")
+        applicable_answer(ans)
+
+def q1_e():
+    print("(Q1) What is the Biggest landmass?")
+    print("(1) The Americas")
+    print("(2) Antarctica")
+    print("(3) Eurasia")
+    ans = int(input("Whats your answer?"))
+    if ans != 3:
+        print("Wrong!")
+        if ans > 3:
+            applicable_answer(ans)
 def q1_chooser():           #randomly chooses a function for q1
-    q1 = random.randint(1, 2)
+    q1 = random.randint(1, 5)
     if q1 == 1:
         q1_a()
-    else:
+    elif q1 == 2:
         q1_b()
+    elif q1 == 3:
+        q1_c()
+    elif q1 == 4:
+        q1_d()
+    else:
+        q1_e()
 
 def q2_a():
     print("(Q2) Whats 1+1?")
@@ -93,3 +127,9 @@ def q3_chooser():           #randomly chooses a function for q3
         q3_a()
     else:
         q3_b()
+
+
+def applicable_answer(answer):
+    if answer > 3:
+        print("You didn't even pick an applicable answer......")
+    transport_system.train(quiz_operator)
