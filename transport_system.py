@@ -10,6 +10,9 @@ def train(stay):
         stay()
     elif ticketmachine == 2:       #stay calls the main menu function which is inserted in each script
         mainmenu.menu()
+    else:
+        print("Gonna assume you meant to leave")
+        mainmenu.menu()
 
 def wrong_platform_check():
     print(" **Play?**")

@@ -35,6 +35,9 @@ def train(station, func1, func2, func3, func4, func5, func6a, func6b):
             func6a()
         elif check:
             func6b()
+    else:
+        print("There is no game here")
+        menu()
 def corner_check(): #I HATE that this is needed, because it does ONE thing and NOTHING else, but it DOESN'T WORK OTHERWISE
     global check
     check = True
