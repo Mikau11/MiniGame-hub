@@ -1,9 +1,6 @@
 import random
 import transport_system
 
-###############################################################################################################################
-#This Game is in a temporary(but working) state, the questions will likely be changed later, and mabye coded changed in future#
-###############################################################################################################################
 
 def quiz_operator():
     print("***Quiz***")
@@ -42,6 +39,7 @@ def q1_b():
         print("Wrong!")
         applicable_answer(ans)
 
+
 def q1_c():
     print("(Q1) Whats the capital of Russia?")
     print("(1) Moscow")
@@ -51,6 +49,7 @@ def q1_c():
     if ans != 1:
         print("Wrong!")
         applicable_answer(ans)
+
 
 def q1_d():
     print("(Q1) What are the only 2 countries that can legally take parts of antarctica?")
@@ -62,6 +61,7 @@ def q1_d():
         print("Wrong!")
         applicable_answer(ans)
 
+
 def q1_e():
     print("(Q1) What is the Biggest landmass?")
     print("(1) The Americas")
@@ -72,6 +72,7 @@ def q1_e():
         print("Wrong!")
         if ans > 3:
             applicable_answer(ans)
+
 def q1_chooser():           #randomly chooses a function for q1
     q1 = random.randint(1, 5)
     if q1 == 1:
@@ -120,6 +121,7 @@ def q2_c():
             applicable_answer(ans)
         transport_system.train(quiz_operator)
 
+
 def q2_d():
     print("(Q2) Given that a = -2, and b = -4, whats b/a?")
     print("(1) 2")
@@ -131,6 +133,7 @@ def q2_d():
         if ans > 3:
             applicable_answer(ans)
         transport_system.train(quiz_operator)
+
 
 def q2_chooser():           #randomly chooses a function for q2
     q2 = random.randint(1, 4)
@@ -152,6 +155,7 @@ def q3_a():
     if ans != 3:
         print("Wrong!")
         transport_system.train(quiz_operator)
+
 def q3_b():
     print("(Q3) Whats 5*6?")
     print("(1) 2")
@@ -161,6 +165,7 @@ def q3_b():
     if ans != 2:
         print("Wrong!")
         transport_system.train(quiz_operator)
+
 
 def q3_chooser():           #randomly chooses a function for q3
     q3 = random.randint(1, 2)
