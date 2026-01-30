@@ -20,3 +20,5 @@ As of 25th of January 2026 there are
   (5) Quiz
   (6) Settings(just name change)
   (7) We do not speak his name..........................................................................
+
+As of 30th of January 2026, I think this project is finally done, I started this project around 27th of December 2025(ish), and just over a month later I finsihed it
