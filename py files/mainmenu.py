@@ -6,12 +6,13 @@ import Quiz
 import corner
 import thefiles
 import name
-with open("file.txt", "r") as files:
-    file_data = files.readlines()
+
 
 check = False
 
 def menu():
+    with open("other files/file.txt", "r") as files:
+        file_data = files.readlines()
     print("Hello," + file_data[1] + "!!!!")
     print("***Welcome to the Game/Activities menu***")
     print("   (1) Star")
@@ -39,9 +40,9 @@ def train(station, func1, func2, func3, func4, func5, func6, func7a, func7b):
     elif station == 7:
         if not check:
             corner_check()
-            func6a()
+            func7a()
         elif check:
-            func6b()
+            func7b()
     else:
         print("There is no game here")
         menu()

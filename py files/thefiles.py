@@ -1,4 +1,4 @@
-with open("file.txt", "r") as files:
+with open("other files/file.txt", "r") as files:
     files_data = files.readlines()
 
 

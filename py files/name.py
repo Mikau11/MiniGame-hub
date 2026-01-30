@@ -1,6 +1,6 @@
 import mainmenu
 
-with open("file.txt", "r") as files:
+with open("other files/file.txt", "r") as files:
     file_data = files.readlines()
 
 
@@ -11,7 +11,7 @@ def name_password():
     file_data[2] = "0\n"
     print("Okay,", name_start, "lets go!!!")
 
-    with open("file.txt", "w") as files:
+    with open("other files/file.txt", "w") as files:
         for line in file_data:
             files.writelines(line)
     mainmenu.menu()
