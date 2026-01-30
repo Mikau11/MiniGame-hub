@@ -1,3 +1,0 @@
-in the terminal type:
-(make sure pyinsatller is installed, pun intended, if not type pip install pyinstaller)
-pyinstaller main.py --onefile
